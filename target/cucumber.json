@@ -1,0 +1,208 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 989300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens the website",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.user_opens_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.verify_user_is_on_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-16T03:06:52.211Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1009900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.steps.StepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify user can login with valid credentials",
+        "description": "",
+        "id": "verify-login-feature;verify-user-can-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.steps.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5636100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.user_enters_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify user is on home page",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.verify_user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@maxim"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens the website",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.user_opens_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.verify_user_is_on_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-16T03:06:52.267Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.steps.StepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify user can login with blank credentials",
+        "description": "",
+        "id": "verify-login-feature;verify-user-can-login-with-blank-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.steps.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user not enter credentials, leave username and password blank",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.user_not_enter_credentials_leave_username_and_password_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user get login error message",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.user_get_login_error_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify user can not log in on home page",
+            "match": {
+              "location": "com.automation.steps.StepDefinition.verify_user_can_not_log_in_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login Feature",
+    "description": "",
+    "id": "verify-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
